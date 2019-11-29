@@ -1,15 +1,43 @@
-<!DOCTYPE html>
-<html>
-
+<!doctype html>
+<html lang="en">
   <head>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-  </head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css" integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Shoppinglist</title>
+  </head>
   <body>
-    <div id="container">
-    <input id="addtolist" type="text"  />
-    <input value="add" type="button"  onClick="add()"/>
+  
+    <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+    <h1 class="display-5"><strong><em>Shopping List</em></strong></h1>
+    <p class="lead"><strong>Add and Save shopping lists</strong></p>
     </div>
-    
+    </div>
+   
+   <div class="container-fluid col-md-4 offset-md-4" id="containerid">
+          <div id="addtolistsection">
+          <input class="mb-4 col-lg-5 rounded" id="addtolist" type="text"/>
+           <br>
+          <input class="col-lg-5 mb-3 rounded" value="Add to Shopping list" type="button"  onClick="addtolist()"/>
+          <br>
+          </div>
+          
+          
+        
+   </div> <!-- container div-->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/js/bootstrap.min.js" integrity="sha384-3qaqj0lc6sV/qpzrc1N5DC6i1VRn/HyX4qdPaiEFbn54VjQBEU341pvjz7Dv3n6P" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="list.js"></script>
   </body>
+</html>
